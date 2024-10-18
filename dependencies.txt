@@ -1,0 +1,27 @@
+git
+zsh-syntax-highliting https://github.com/zsh-users/zsh-syntax-highlighting
+waybar https://github.com/Alexays/Waybar
+wofi  https://github.com/SimplyCEO/wofi
+kitty https://github.com/kovidgoyal/kitty
+hyprland https://github.com/hyprwm/Hyprland
+swaybg https://github.com/swaywm/swaybg
+oh-my-posh https://github.com/JanDeDobbeleer/oh-my-posh
+zsh https://github.com/zsh-users/zsh
+networkmanager  https://github.com/NetworkManager/NetworkManager
+wl-clipboard https://github.com/bugaevc/wl-clipboard
+clipman https://github.com/chmouel/clipman
+ttf-material-design-icons
+ttf-0xproto-nerd
+grimblast https://aur.archlinux.org/packages/grimblast-git
+slurp
+jq
+sddm
+mako
+pipewire
+wireplumber
+polkit-kde-agent
+qt5-wayland
+qt6-wayland
+xdg-desktop-portal-hyprland
+xorg-wayland 
+nwg-look (gtk theming)
