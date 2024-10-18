@@ -6,14 +6,17 @@ Installation
 For Arch Linux users, you can use the provided installation script:
 
 ```
-
 curl https://raw.githubusercontent.com/AQMpolyface/dotfiles/refs/heads/master/archinstall.sh > archinstall.sh
 chmod +x archinstall.sh
 ./archinstall.sh
 ```
-For other distributions, you can manually install the dependencies listed in the dependencies.txt file.
-
-
+For open suse, you can use the owopensuse.sh script
+```
+curl https://raw.githubusercontent.com/AQMpolyface/dotfiles/refs/heads/master/owopensuse.sh > owopensuse.sh
+chmod +x owopensuse.sh
+./owopensuse.sh
+```
+For other distr, you can easely modify the owopensuse.sh
 Customization
 
 the wallpaper isnt included. you can find it here: https://polyface.ch/images/wallpaper/1317094.png
