@@ -16,6 +16,10 @@ curl https://raw.githubusercontent.com/AQMpolyface/dotfiles/refs/heads/master/ow
 chmod +x owopensuse.sh
 ./owopensuse.sh
 ```
+You need to manualy install fonts if you dont use the arch script. Here a few links:
+https://github.com/Templarian/MaterialDesign-Font
+https://fontesk.com/download/109644/?tmstv=1685689495
+
 
 the owopensue scritp has not been tested. Be careful with it
 For other distr, you can easely modify the owopensuse.sh
