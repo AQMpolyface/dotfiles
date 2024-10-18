@@ -16,6 +16,8 @@ curl https://raw.githubusercontent.com/AQMpolyface/dotfiles/refs/heads/master/ow
 chmod +x owopensuse.sh
 ./owopensuse.sh
 ```
+
+the owopensue scritp has not been tested. Be careful with it
 For other distr, you can easely modify the owopensuse.sh
 Customization
 
