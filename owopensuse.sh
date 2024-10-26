@@ -21,7 +21,7 @@ else
     return 69
 fi
 
-sudo zypper in nwg-look git hyprland xdg-desktop-portal-hyprland wl-clipboard qt6-wayland libqt5-qtwayland  polkit-kde-agent wireplumber pipewire mako sddm networkmanager swaybg  kitty wofi waybar libnotify hyprpicker scdoc slurp zsh clipman
+sudo zypper in nwg-look git hyprland xdg-desktop-portal-hyprland wl-clipboard qt6-wayland libqt5-qtwayland  polkit-kde-agent wireplumber pipewire mako sddm networkmanager swaybg  kitty wofi waybar libnotify hyprpicker scdoc slurp zsh clipman swayidle hyprlock
 
 cd /tmp
 

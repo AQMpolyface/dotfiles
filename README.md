@@ -1,37 +1,46 @@
 Dotfiles
 
-This repository contains my personal dotfiles and configuration files for various applications and tools. These dotfiles are designed to work with Arch Linux, but they may also be compatible with other Linux distributions.
+This repository contains my personal dotfiles and configuration files for various applications and tools. These dotfiles are primarily designed for Arch Linux, but they may also be compatible with other Linux distributions.
+Preview
+
+Here’s a glimpse of how the setup looks:
+
+Dotfiles Overview
+Waybar Configuration
 Installation
+Arch Linux
 
 For Arch Linux users, you can use the provided installation script:
 
+bash
+
 ```
-curl https://raw.githubusercontent.com/AQMpolyface/dotfiles/refs/heads/master/archinstall.sh > archinstall.sh
+curl https://raw.githubusercontent.com/AQMpolyface/dotfiles/refs/heads/master/archinstall.sh -o archinstall.sh
 chmod +x archinstall.sh
 ./archinstall.sh
 ```
-For open suse, you can use the owopensuse.sh script
+openSUSE
+
+For openSUSE users, you can use the owopensuse.sh script:
+
+bash
 ```
-curl https://raw.githubusercontent.com/AQMpolyface/dotfiles/refs/heads/master/owopensuse.sh > owopensuse.sh
+curl https://raw.githubusercontent.com/AQMpolyface/dotfiles/refs/heads/master/owopensuse.sh -o owopensuse.sh
 chmod +x owopensuse.sh
 ./owopensuse.sh
 ```
-You need to manualy install fonts if you dont use the arch script. Here a few links:
-https://github.com/Templarian/MaterialDesign-Font
+Note: The owopensuse.sh script has not been extensively tested. Please use it with caution.
+Other Distributions
+
+For other distributions, you can easily modify the owopensuse.sh script to suit your needs.
+Fonts
+
+If you do not use the Arch installation script, you will need to manually install fonts. Here are a few links to get you started:
+
+    https://github.com/Templarian/MaterialDesign-Font
 https://fontesk.com/download/109644/?tmstv=1685689495
-
-
-the owopensue scritp has not been tested. Be careful with it
-For other distr, you can easely modify the owopensuse.sh
-Customization
-
-the wallpaper isnt included. you can find it here: https://polyface.ch/images/wallpaper/1317094.png
-
-*Warning* you *need* to change the path of the pictures at the botom of waybar/style.css, for the logo. The file only allows complete path (eg: /home/user/uwu.png). If you dont you wont have a logo.
-
-You can safely delete the aliases in the .zshrc file or set your own aliases.
-
-Wallpaper
+    
+ Wallpaper
 
 By default, swaybg (the wallpaper manager) will choose a random picture from the ~/Pictures/wallpaper directory. The installation script will download one wallpaper. You can add your own wallpapers and add them to ~/Pictures/wallpapers, or set swaybg to use only one pictures. You can modify swaybg in the hyprland.conf
 

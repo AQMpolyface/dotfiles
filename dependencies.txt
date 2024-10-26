@@ -25,3 +25,5 @@ qt6-wayland
 xdg-desktop-portal-hyprland
 xorg-wayland 
 nwg-look (gtk theming)
+hyprlock
+swayidle

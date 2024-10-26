@@ -31,7 +31,7 @@ else
     return 69
 fi
 
-paru -S zsh-syntax-highlighting slurp  scdoc hyprpicker libnotify waybar wofi kitty hyprland swaybg zsh networkmanager wl-clipboard ttf-material-design-icons ttf-0xproto-nerd sddm mako pipewire wireplumber polkit-kde-agent qt5-wayland qt6-wayland xdg-desktop-portal-hyprland xorg-wayland nwg-look git
+paru -S zsh-syntax-highlighting slurp  scdoc hyprpicker libnotify waybar wofi kitty hyprland swaybg zsh networkmanager wl-clipboard ttf-material-design-icons ttf-0xproto-nerd sddm mako pipewire wireplumber polkit-kde-agent qt5-wayland qt6-wayland xdg-desktop-portal-hyprland xorg-wayland nwg-look git swayidle hyprlock
 paru -S oh-my-posh 
 paru -S librewolf-bin 
 paru -S clipman
