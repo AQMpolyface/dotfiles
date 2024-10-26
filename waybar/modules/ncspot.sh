@@ -1,11 +1,11 @@
 #!/bin/sh
 
 class=$(playerctl metadata --player=ncspot --format '{{lc(status)}}')
-icon=""
+icon="   "
 
 if [[ $class == "playing" ]]; then
   info=$(playerctl metadata --player=ncspot --format '{{artist}} - {{title}}')
-  
+
   # Check if title length exceeds 36 characters
   if [[ ${#info} -gt 36 ]]; then
     # Trim title to 36 characters and add "..."

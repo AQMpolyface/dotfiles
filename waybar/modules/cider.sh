@@ -5,7 +5,7 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
-icon=""
+icon="    "
 
 action=$1
 BASE_URL="http://localhost:10769"

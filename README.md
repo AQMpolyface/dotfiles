@@ -3,6 +3,7 @@ Dotfiles
 This repository contains my personal dotfiles and configuration files for various applications and tools. These dotfiles are primarily designed for Arch Linux, but they may also be compatible with other Linux distributions.
 Preview
 
+I wouldn't reccomend this to begginers, because some things are probably broken in this repo. If you find out that i forgot to add/remove a dependency, please let me know and i will fix it.
 Here’s a glimpse of how the setup looks:
 
 Dotfiles Overview

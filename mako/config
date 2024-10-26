@@ -1,0 +1,18 @@
+# Colors
+background-color=#1e1e2e
+text-color=#cdd6f4
+border-color=#89b4fa
+progress-color=over #89b4fa
+
+# Fonts
+font=Iosevka Nerd Font 12
+
+default-timeout=6000
+# Other settings
+width=400
+height=100
+margin=10
+padding=15
+border-size=2
+border-radius=10
+icons=true

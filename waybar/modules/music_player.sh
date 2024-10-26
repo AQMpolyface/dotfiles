@@ -12,7 +12,7 @@ else
     music_player="ncspot"
 fi
 
-icon=""
+icon="   "
 
 action=$1
 
@@ -21,7 +21,7 @@ case "$action" in
         class=$(playerctl metadata --player=$music_player --format '{{lc(status)}}')
         if [[ $class == "playing" ]]; then
         info=$(playerctl metadata --player=$music_player --format '{{artist}} - {{title}}')
-        
+
         # Check if title length exceeds 36 characters
         if [[ ${#info} -gt 36 ]]; then
             # Trim title to 36 characters and add "..."
@@ -50,18 +50,18 @@ case "$action" in
 
         echo -e "{\"text\":\""$text"\", \"class\":\""$class"\"}"
         ;;
-    
+
     pause)
         playerctl --player=$music_player play-pause
         ;;
-    
+
     previous)
         playerctl --player=$music_player previous
         ;;
 
     next)
         playerctl --player=$music_player next
-        ;;  
+        ;;
     *)
         echo "Unknown action: $action. Please use 'grep', 'pause', 'previous', or 'next'."
         exit 1

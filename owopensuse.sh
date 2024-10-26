@@ -11,7 +11,9 @@ if [[ $yn =~ ^[Yy]$ ]]; then
     cp -r ~/.config/wofi ~/.config/backup
     cp -r ~/.config/fastfetch ~/.config/backup
     cp -r ~/.config/hypr ~/.config/backup
-    cp -r ~/.zsh ~/.config/backup/zshrc.bak
+    cp -r ~/.config/zsh ~/.config/backup/zsh
+    cp -r ~/.config/.zshrc ~/.config/backup/zshrc.bak
+    cp -r ~/.config/mako/ ~/.config/mako
     echo "done. Starting to install dependencies.."
 
 elif [[ $yn =~ ^[Nn]$ ]]; then
@@ -69,9 +71,10 @@ mv waybar/logo.png /usr/share
 cp -r wofi ~/.config/
 cp -r waybar ~/.config/
 cp -r fastfetch ~/.config/
-cp -r hypr ~/.config
+cp -r hypr ~/.config/
 cp .zshrc ~
-cp -r zsh ~/.config
+cp -r zsh ~/.config/
+cp -r mako ~/.config/
 echo "done. you can restart to hyprland and see if it works correctly"
 
 
