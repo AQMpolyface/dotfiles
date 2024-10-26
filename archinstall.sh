@@ -59,6 +59,7 @@ cp -r waybar ~/.config/
 cp -r fastfetch ~/.config/
 cp -r hypr ~/.config
 cp .zshrc ~
+cp -r zsh ~/.config
 
 echo "done. you can restart to hyprland and see if it works correctly"
 
