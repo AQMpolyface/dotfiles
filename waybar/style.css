@@ -1,6 +1,6 @@
+
 * {
     min-height: 0;
-    /* font-family: Lexend, "Font Awesome 6 Free Solid"; */
     font-family: JetBrainsMono Nerd Font;
     font-size: 14px;
     font-weight: 500;
@@ -9,9 +9,7 @@
 window#waybar {
     transition-property: background-color;
     transition-duration: 0.5s;
-    /* background-color: #1e1e2e; */
-    /* background-color: #181825; */
-    background-color: rgba(24, 24, 37, 0.8);
+    background-color: rgba(24, 24, 37, 0.8); /* Base color */
 }
 
 window#waybar.hidden {
@@ -30,24 +28,24 @@ window#waybar.hidden {
     min-height: 0;
     margin: 4px 4px;
     border-radius: 8px;
-    background-color: #181825;
-    color: #cdd6f4;
+    background-color: #1e1e2e; /* Darker shade */
+    color: #f5e0dc; /* Text color */
 }
 
 #workspaces button:hover {
     box-shadow: inherit;
     text-shadow: inherit;
-    color: #1e1e2e;
-    background-color: #cdd6f4;
+    color: #1e1e2e; /* Hover text color */
+    background-color: #f5e0dc; /* Hover background */
 }
 
 #workspaces button.active {
-    color: #1e1e2e;
-    background-color: #89b4fa;
+    color: #1e1e2e; /* Active text color */
+    background-color: #89b4fa; /* Active background */
 }
 
 #workspaces button.urgent {
-    background-color: #f38ba8;
+    background-color: #f38ba8; /* Urgent background */
 }
 
 #clock,
@@ -65,28 +63,28 @@ window#waybar.hidden {
     padding: 2px 10px;
     border-radius: 8px;
     margin: 4px 4px;
-    background-color: #181825;
+    background-color: #1e1e2e; /* Component background */
 }
 
 #custom-sep {
     padding: 0px;
-    color: #585b70;
+    color: #585b70; /* Separator color */
 }
 
 #custom-screen-recorder.recording {
-    color: #10ef2c;
+    color: #a6e3a1; /* Recording color */
 }
 
 #custom-screen-recorder.not-recording {
-    color: #df2020;
+    color: #f38ba8; /* Not recording color */
 }
 
 #custom-music-player.playing {
-    color: #cdd6f4;
+    color: #f5e0dc; /* Playing color */
 }
 
 #custom-music-player.paused {
-    color: #9399b2;
+    color: #9399b2; /* Paused color */
 }
 
 window#waybar.empty #window {
@@ -94,56 +92,56 @@ window#waybar.empty #window {
 }
 
 #cpu {
-    color: #94e2d5;
+    color: #94e2d5; /* CPU color */
     margin-left: 0;
     margin-right: 0;
 }
 
 #custom-gpu {
-    color: #94e2d5;
+    color: #94e2d5; /* GPU color */
     margin-left: 0;
     margin-right: 0;
 }
 
 #memory {
     margin-left: 0;
-    color: #cba6f7;
+    color: #cba6f7; /* Memory color */
 }
 
 #clock {
-    color: #74c7ec;
+    color: #74c7ec; /* Clock color */
 }
 
 #clock.simpleclock {
-    color: #89b4fa;
+    color: #89b4fa; /* Simple clock color */
 }
 
 #window {
-    color: #a6e3a1;
+    color: #cba6f7;
 }
 
 #pulseaudio {
-    color: #b4befe;
+    color: #b4befe; /* Audio color */
 }
 
 #pulseaudio.muted {
-    color: #a6adc8;
+    color: #a6adc8; /* Muted audio color */
 }
 
 #custom-logo {
-    color: #89b4fa;
+    color: #89b4fa; /* Logo color */
 }
 
 #custom-power {
-    color: #f38ba8;
+    color: #f38ba8; /* Power button color */
     padding-right: 5px;
     font-size: 14px;
 }
 
 @keyframes blink {
     to {
-        background-color: #f38ba8;
-        color: #181825;
+        background-color: #f38ba8; /* Blink background */
+        color: #181825; /* Blink color */
     }
 }
 

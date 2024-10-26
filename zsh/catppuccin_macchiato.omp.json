@@ -11,12 +11,12 @@
     {
       "alignment": "left",
       "segments": [
-       /* {
+        {
          "foreground": "p:os",
          "style": "plain",
-         "template": "{{.Icon}} ",
+         "template": "  ",
           "type": "os"
-        },*/
+        },
         {
           "foreground": "p:blue",
           "style": "plain",
