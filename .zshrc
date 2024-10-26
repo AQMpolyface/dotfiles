@@ -1,8 +1,8 @@
-#export ZSH="$HOME/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 plugins=(golang)
-#source $ZSH/oh-my-zsh.sh
-source /home/polyface/.config/zsh 
+source $ZSH/oh-my-zsh.sh
+
 
 
  export EDITOR='nvim'

@@ -37,9 +37,9 @@ Fonts
 
 If you do not use the Arch installation script, you will need to manually install fonts. Here are a few links to get you started:
 
-    https://github.com/Templarian/MaterialDesign-Font
+https://github.com/Templarian/MaterialDesign-Font
 https://fontesk.com/download/109644/?tmstv=1685689495
-    
+
  Wallpaper
 
 By default, swaybg (the wallpaper manager) will choose a random picture from the ~/Pictures/wallpaper directory. The installation script will download one wallpaper. You can add your own wallpapers and add them to ~/Pictures/wallpapers, or set swaybg to use only one pictures. You can modify swaybg in the hyprland.conf
@@ -49,10 +49,18 @@ Keyboard Layout
 
 The default keyboard layout is Swiss French. You can change it by modifying the kb_layout and kb_variant settings in ~/.config/hypr/hyprland.conf.
 
+some mappings:
+
+mainmod + m #starts vesktop (discord client)
+mainmod + q #kills the active window
+mainmod + y #starts kitty ($terminal)
+mainmod + l # changes the wallpaper to a random one from ~/Pictures/wallpapers
+mainmod + k # quits hyprland
+mainmod + v # pick a line from cliupboard history
 Credits
 
-For the Wofi configuration, I used the awesome-wofi repository.
-    For the Waybar configuration, I modified the configuration from the yorunoken/dotfiles repository.
+For the Wofi configuration, I used the awesome-wofi repository. https://github.com/calthejuggler/awesome-wofi
+For the Waybar configuration, I modified the configuration from the https://github.com/yorunoken/dotfiles repository.
 
 Disclaimer
 

@@ -25,7 +25,7 @@
 "custom/logo": {
   "format": "    ",
   "tooltip": false,
-  "on-click": "wofi --show drun"
+  "on-click": "wofi --show drun - -I"
 },
 
   "custom/music-player": {
