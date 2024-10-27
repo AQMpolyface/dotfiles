@@ -5,7 +5,7 @@ source $ZSH/oh-my-zsh.sh
 
 
 
- export EDITOR='nvim'
+export EDITOR='nvim'
 
 #source /usr/share/cachyos-zsh-config/cachyos-config.zsh
 source /home/polyface/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -14,14 +14,14 @@ eval "$(oh-my-posh init zsh --config /home/polyface/.config/zsh/catppuccin_macch
 
 export git="/home/polyface/Desktop/git/"
 
-
+alias h="hoogle"
 alias loff="headsetcontrol -l 0"
 alias R="paru -R"
 alias c="clear"
 alias S="paru -S"
 alias s="paru -s"
 alias Syu="paru -Syu"
-alias qm="paru -Qm"
+alias qi="paru -Qi"
 alias lvim="/home/polyface/.local/bin/lvim"
 #alias slvim ="sudo /home/polyface/.local/bin/lvim"
 alias ...="../../"
