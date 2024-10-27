@@ -12,8 +12,7 @@ else
     music_player="ncspot"
 fi
 
-icon="   "
-
+icon="󰄛 "   
 action=$1
 
 case "$action" in
@@ -33,7 +32,7 @@ case "$action" in
 
         text="$icon  $trimmed_title"
         elif [[ $class == "paused" ]]; then
-        info=$(playerctl metadata --player=$music_player --format '{{artist}} - {{title}}')
+        info=$(playerctl metadata --player=$music_player --format '    {{artist}} - {{title}}')
         # Check if title length exceeds 36 characters
         if [[ ${#info} -gt 36 ]]; then
             # Trim title to 36 characters and add "..."
@@ -48,7 +47,7 @@ case "$action" in
         text=""
         fi
 
-        echo -e "{\"text\":\""$text"\", \"class\":\""$class"\"}"
+        echo -e "{\"text\":\"" $text"\", \"class\":\""$class"\"}"
         ;;
 
     pause)

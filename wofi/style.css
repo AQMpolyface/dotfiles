@@ -1,19 +1,39 @@
 /* The name of the window itself */
 #window {
-  /* The name of the box that contains everything */
 }
+
+/* The name of the box that contains everything */
 #window #outer-box {
-  /* The name of the search bar */
-  /* The name of the scrolled window containing all of the entries */
 }
+
+/* The name of the search bar */
+#window #outer-box #search {
+}
+
+/* The name of the scrolled window containing all of the entries */
 #window #outer-box #scroll {
-  /* The name of the box containing all of the entries */
-  /* The name of all the text in entries */
-  /* The name of all entries */
-  /* The name of all boxes shown when expanding  */
-  /* entries with multiple actions */
 }
-#window #outer-box #scroll #entry {
-  /* The name of all entries currently selected. */
-  /* The name of all entries currently unselected. */
+
+/* The name of the box containing all of the entries */
+#window #outer-box #scroll #entry-box {
+}
+
+/* The name of all the text in entries */
+#window #outer-box #scroll #entry-box .entry-text {
+}
+
+/* The name of all entries */
+#window #outer-box #scroll #entry-box .entry {
+}
+
+/* The name of all boxes shown when expanding entries with multiple actions */
+#window #outer-box #scroll #entry-box .expanded-actions {
+}
+
+/* The name of all entries currently selected */
+#window #outer-box #scroll #entry-box .entry.selected {
+}
+
+/* The name of all entries currently unselected */
+#window #outer-box #scroll #entry-box .entry.unselected {
 }
