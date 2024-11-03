@@ -84,16 +84,16 @@
     },
 
     "pulseaudio": {
-        "format": "{icon} {volume}%",
+        "format": "{icon}  { volume}%",
         "format-muted": "  muted",
         "format-icons": {
             "headphone": " ",
-            "hands-free": "󰂑",
-            "headset": "󰂑",
+            //"hands-free": "󰂑",
+            //"headset": "󰂑",
             "phone": "",
             "portable": "",
             "car": "",
-            "default": [" ", " ", " "],
+          "default": [" ", " ", "  "],
         },
         "on-click-middle": "pamixer -t",
         "on-click": "pavucontrol",
