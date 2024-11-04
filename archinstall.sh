@@ -59,6 +59,9 @@ cd dotfiles
 mv waybar/logo.png /usr/share
 
 cp -r rofi  ~/.config/rofi/
+mkdir -p ~/.local/share/rofi/
+mkdir -p ~/.local/share/rofi/themes/
+cp -r ~/.config/rofi/themes/* ~/.local/share/rofi/themes/
 cp -r wofi ~/.config/
 cp -r waybar ~/.config/
 cp -r fastfetch ~/.config/
