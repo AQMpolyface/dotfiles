@@ -24,6 +24,7 @@ if [[ $yn =~ ^[Yy]$ ]]; then
     cp -r ~/.zshrc ~/.config/backup/zshrc.bak
     cp -r  ~/.config/zsh ~/.config/backup
     cp -r ~/.config/mako/ ~/.config/backup
+    cp -r ~/.config/rofi/ ~/.config/backup
     echo "done. Starting to install dependencies.."
 
 elif [[ $yn =~ ^[Nn]$ ]]; then
@@ -33,12 +34,12 @@ else
     return 69
 fi
 
-paru -S zsh-syntax-highlighting slurp  scdoc hyprpicker libnotify waybar wofi kitty hyprland swaybg zsh networkmanager wl-clipboard ttf-material-design-icons ttf-0xproto-nerd sddm mako pipewire wireplumber polkit-kde-agent qt5-wayland qt6-wayland xdg-desktop-portal-hyprland xorg-wayland nwg-look git swayidle hyprlock
+paru -S zsh-syntax-highlighting slurp  scdoc hyprpicker libnotify waybar wofi kitty hyprland swaybg zsh networkmanager wl-clipboard ttf-material-design-icons ttf-0xproto-nerd sddm mako pipewire wireplumber polkit-kde-agent qt5-wayland qt6-wayland xdg-desktop-portal-hyprland xorg-wayland nwg-look git swayidle hyprlock rofi
 paru -S oh-my-posh 
 paru -S librewolf-bin 
 paru -S clipman
 paru -S grimblast
-
+paru -S iwmenu-git
 
 
 mkdir -p ~/Pictures/wallpapers
@@ -53,16 +54,18 @@ cd /tmp
 rm -rf dotfiles
 git clone https://github.com/AQMpolyface/dotfiles.git
 
-rm -rf ~/.config/wofi ~/.config/waybar ~/.config/hypr ~/.config/fastfetch ~/.zshrc
+rm -rf ~/.config/wofi ~/.config/waybar ~/.config/hypr ~/.config/fastfetch ~/.zshrc ~/.config/rofi
 cd dotfiles
 mv waybar/logo.png /usr/share
+
+cp -r rofi  ~/.config/rofi/
 cp -r wofi ~/.config/
 cp -r waybar ~/.config/
 cp -r fastfetch ~/.config/
 cp -r hypr ~/.config/
 cp .zshrc ~
 cp -r zsh ~/.config/
-cp -r mako ~/.config/§
+cp -r mako ~/.config/
 
 echo "done. you can restart to hyprland and see if it works correctly"
 

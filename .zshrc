@@ -17,6 +17,7 @@ source /home/polyface/.config/zsh/dracula-theme.zsh
 source /home/polyface/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval "$(oh-my-posh init zsh --config /home/polyface/.config/zsh/catppuccin_macchiato.omp.json)"
 
+alias audio=pavucontrol
 alias ="fastfetch"  
 alias h="hoogle"
 alias loff="headsetcontrol -l 0"

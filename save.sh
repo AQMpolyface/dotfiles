@@ -1,5 +1,9 @@
 #!/bin/bash
 
+cp -r ~/.config/rofi/ .
+
+cp -r ~/.local/share/rofi/themes/ rofi/themes
+
 cp -r ~/.config/kitty/ .
 
 cp -r ~/.config/hypr/ .

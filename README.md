@@ -24,16 +24,11 @@ openSUSE
 
 For openSUSE users, you can use the owopensuse.sh script:
 
-bash
-```
-curl https://raw.githubusercontent.com/AQMpolyface/dotfiles/refs/heads/master/owopensuse.sh -o owopensuse.sh
-chmod +x owopensuse.sh
-./owopensuse.sh
-```
-Note: The owopensuse.sh script has not been extensively tested. Please use it with caution.
+
 Other Distributions
 
-For other distributions, you can easily modify the owopensuse.sh script to suit your needs.
+For other distributions, you can see dependencies in the dependencies.txt, or modify the archinstall.sh script
+
 Fonts
 
 If you do not use the Arch installation script, you will need to manually install fonts. Here are a few links to get you started:
@@ -52,17 +47,25 @@ The default keyboard layout is Swiss French. You can change it by modifying the 
 
 some mappings:
 
+
 mainmod + m #starts vesktop (discord client)
+
 mainmod + q #kills the active window
+
 mainmod + y #starts kitty ($terminal)
+
+
 mainmod + l # changes the wallpaper to a random one from ~/Pictures/wallpapers
+
 mainmod + k # quits hyprland
-mainmod + v # pick a line from cliupboard history
+
+mainmod + v # pick a line from clipboard history
+
 Credits
 
 For the Wofi configuration, I used the awesome-wofi repository. https://github.com/calthejuggler/awesome-wofi
 For the Waybar configuration, I modified the configuration from the https://github.com/yorunoken/dotfiles repository.
-
+For the Rofi configuration, I used the cattpuccin config:  https://github.com/catppuccin/rofi
 Disclaimer
 
 This configuration has not been extensively tested, so if you encounter any issues or missing dependencies, please create a bug report or contact me.
