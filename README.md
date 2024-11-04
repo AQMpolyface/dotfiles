@@ -67,6 +67,8 @@ Credits
 For the Wofi configuration, I used the awesome-wofi repository. https://github.com/calthejuggler/awesome-wofi
 For the Waybar configuration, I modified the configuration from the https://github.com/yorunoken/dotfiles repository.
 For the Rofi configuration, I used the cattpuccin config:  https://github.com/catppuccin/rofi
+
+
 Disclaimer
 
 This configuration has not been extensively tested, so if you encounter any issues or missing dependencies, please create a bug report or contact me.
