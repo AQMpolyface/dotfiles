@@ -20,10 +20,6 @@ curl https://raw.githubusercontent.com/AQMpolyface/dotfiles/refs/heads/master/ar
 chmod +x archinstall.sh
 ./archinstall.sh
 ```
-openSUSE
-
-For openSUSE users, you can use the owopensuse.sh script:
-
 
 Other Distributions
 
@@ -54,12 +50,17 @@ mainmod + q #kills the active window
 
 mainmod + y #starts kitty ($terminal)
 
-
 mainmod + l # changes the wallpaper to a random one from ~/Pictures/wallpapers
 
 mainmod + k # quits hyprland
 
 mainmod + v # pick a line from clipboard history
+
+mainmod + z # select an area to screenshot (copy to clipboard)
+
+mainmod + r # application picker
+
+mainmod + j # manage networks with iwmenu and rofi
 
 Credits
 
