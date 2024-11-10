@@ -64,9 +64,9 @@ mainmod + j # manage networks with iwmenu and rofi
 
 Credits
 
-For the Wofi configuration, I used the awesome-wofi repository. https://github.com/calthejuggler/awesome-wofi
 For the Waybar configuration, I modified the configuration from the https://github.com/yorunoken/dotfiles repository.
 For the Rofi configuration, I used the cattpuccin config:  https://github.com/catppuccin/rofi
+(i love cattpuccin)
 
 
 Disclaimer

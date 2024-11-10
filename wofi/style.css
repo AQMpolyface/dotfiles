@@ -1,39 +1,82 @@
-/* The name of the window itself */
+/* Catppuccin Mocha theme colors */
+@define-color base   #1e1e2e;
+@define-color mantle #181825;
+@define-color crust  #11111b;
+
+@define-color text     #cdd6f4;
+@define-color subtext0 #a6adc8;
+@define-color subtext1 #bac2de;
+
+@define-color surface0 #313244;
+@define-color surface1 #45475a;
+@define-color surface2 #585b70;
+
+@define-color blue   #89b4fa;
+@define-color mauve  #cba6f7;
+@define-color pink   #f5c2e7;
+@define-color lavender #b4befe;
+
 #window {
+    background-color: @base;
+    border: 1px solid @mauve;
+    border-radius: 6px;
+    font-family: "JetBrainsMono Nerd Font";
 }
 
-/* The name of the box that contains everything */
-#window #outer-box {
+#outer-box {
+    margin: 2px;
+    padding: 4px;
+    background-color: @base;
 }
 
-/* The name of the search bar */
-#window #outer-box #search {
+#input {
+    background-color: @surface0;
+    border: 1px solid @surface1;
+    border-radius: 4px;
+    margin: 2px;
+    padding: 3px;
+    color: @text;
 }
 
-/* The name of the scrolled window containing all of the entries */
-#window #outer-box #scroll {
+#scroll {
+    margin: 2px;
+    padding: 2px;
 }
 
-/* The name of the box containing all of the entries */
-#window #outer-box #scroll #entry-box {
+#inner-box {
+    background-color: @base;
+    border-radius: 4px;
 }
 
-/* The name of all the text in entries */
-#window #outer-box #scroll #entry-box .entry-text {
+#img {
+    margin: 2px;
+    padding: 2px;
 }
 
-/* The name of all entries */
-#window #outer-box #scroll #entry-box .entry {
+#text {
+    color: @text;
+    margin: 2px;
+    padding: 2px;
 }
 
-/* The name of all boxes shown when expanding entries with multiple actions */
-#window #outer-box #scroll #entry-box .expanded-actions {
+#entry {
+    padding: 3px;
+    margin: 1px;
+    border-radius: 4px;
 }
 
-/* The name of all entries currently selected */
-#window #outer-box #scroll #entry-box .entry.selected {
+#entry:selected {
+    background-color: @surface1;
+    border: 1px solid @lavender;
 }
 
-/* The name of all entries currently unselected */
-#window #outer-box #scroll #entry-box .entry.unselected {
+#entry:unselected {
+    background-color: @surface0;
+}
+
+#expander-box {
+    background-color: @surface0;
+    border-radius: 4px;
+    margin: 2px;
+    padding: 2px;
 }

@@ -7,6 +7,8 @@ source $ZSH/oh-my-zsh.sh
 export Desktop=/home/polyface/Desktop/
 export git="/home/polyface/Desktop/git/"
 export go="/home/polyface/Desktop/go/"
+export rust="/home/polyface/Desktop/rust/"
+export hask="/home/polyface/Desktop/hask/"
 export EDITOR='/home/polyface/.local/bin/lvim'
 export PATH=$PATH:/home/polyface/.local/bin:/home/polyface/.cabal/bin
 
@@ -28,17 +30,15 @@ alias s="paru -s"
 alias Syu="paru -Syu"
 alias qi="paru -Qi"
 alias lvim="/home/polyface/.local/bin/lvim"
-#alias slvim ="sudo /home/polyface/.local/bin/lvim"
 alias auto="/home/polyface/Desktop/auto.sh"
 alias zed="zeditor"
 alias torb="sh -c '"/home/polyface/Desktop/programs/tor-browser/Browser/start-tor-browser" --detach || ([ !  -x "/home/polyface/Desktop/programs/tor-browser/Browser/start-tor-browser" ] && "$(dirname "$*")"/Browser/start-tor-browser --detach)' dummy %k"
-
+alias catimg="kitty +kitten icat"
 
 source /home/polyface/.ghcup/env
 [ -f "/home/polyface/.ghcup/env" ] && . "/home/polyface/.ghcup/env" # ghcup-env
 export LD_LIBRARY_PATH=/home/polyface/.local/lib/arch-mojo:$LD_LIBRARY_PATH
 
-# dunc aliases
 office() {
     soffice --writer "$1" &
 }
@@ -47,3 +47,4 @@ slvim() {
   sudo /home/polyface/.local/bin/lvim "$1"
 }
 
+export PATH="$PATH:/home/polyface/.modular/bin"

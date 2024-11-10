@@ -1,33 +1,82 @@
-/* The name of the window itself */
+/* Catppuccin Mocha theme colors */
+@define-color base   #1e1e2e;
+@define-color mantle #181825;
+@define-color crust  #11111b;
+
+@define-color text     #cdd6f4;
+@define-color subtext0 #a6adc8;
+@define-color subtext1 #bac2de;
+
+@define-color surface0 #313244;
+@define-color surface1 #45475a;
+@define-color surface2 #585b70;
+
+@define-color blue   #89b4fa;
+@define-color mauve  #cba6f7;
+@define-color pink   #f5c2e7;
+@define-color lavender #b4befe;
+
 #window {
-  /* The name of the box that contains everything */
-  #outer-box {
-    /* The name of the search bar */
-    #input {}
+    background-color: @base;
+    border: 2px solid @mauve;
+    border-radius: 8px;
+    font-family: "JetBrainsMono Nerd Font";
+}
 
-    /* The name of the scrolled window containing all of the entries */
-    #scroll {
-      /* The name of the box containing all of the entries */
-      #inner-box
+#outer-box {
+    margin: 5px;
+    padding: 10px;
+    background-color: @base;
+}
 
-      /* The name of all images in entries displayed in image mode */
-      #img {}
+#input {
+    background-color: @surface0;
+    border: 2px solid @surface1;
+    border-radius: 6px;
+    margin: 5px;
+    padding: 5px;
+    color: @text;
+}
 
-      /* The name of all the text in entries */
-      #text {}
+#scroll {
+    margin: 5px;
+    padding: 5px;
+}
 
-      /* The name of all entries */
-      #entry {
-        /* The name of all entries currently selected. */
-        &:selected {}
+#inner-box {
+    background-color: @base;
+    border-radius: 6px;
+}
 
-        /* The name of all entries currently unselected. */
-        &:unselected {}
-      }
+#img {
+    margin: 5px;
+    padding: 5px;
+}
 
-      /* The name of all boxes shown when expanding  */
-      /* entries with multiple actions */
-      #expander-box {}
-    }
-  }
+#text {
+    color: @text;
+    margin: 5px;
+    padding: 5px;
+}
+
+#entry {
+    padding: 5px;
+    margin: 2px;
+    border-radius: 6px;
+}
+
+#entry:selected {
+    background-color: @surface1;
+    border: 2px solid @lavender;
+}
+
+#entry:unselected {
+    background-color: @surface0;
+}
+
+#expander-box {
+    background-color: @surface0;
+    border-radius: 6px;
+    margin: 5px;
+    padding: 5px;
 }
