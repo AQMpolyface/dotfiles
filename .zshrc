@@ -3,14 +3,15 @@ export ZSH="$HOME/.oh-my-zsh"
 plugins=(golang)
 source $ZSH/oh-my-zsh.sh
 
-
-export Desktop=/home/polyface/Desktop/
+export android="/home/polyface/AndroidStudioProjects"
+export Desktop="/home/polyface/Desktop/"
 export git="/home/polyface/Desktop/git/"
 export go="/home/polyface/Desktop/go/"
 export rust="/home/polyface/Desktop/rust/"
 export hask="/home/polyface/Desktop/hask/"
 export EDITOR='/home/polyface/.local/bin/lvim'
-export PATH=$PATH:/home/polyface/.local/bin:/home/polyface/.cabal/bin
+export sparc="/home/polyface/Desktop/sparc/"
+export PATH=$PATH:/home/polyface/.local/bin:/home/polyface/.cabal/bin:/home/polyface/.cargo/bin/:
 
 #source /usr/share/cachyos-zsh-config/cachyos-config.zsh
 #source /home/polyface/.config/zsh/catppuccin_macchiato-zsh-syntax-highlighting.zsh
@@ -45,6 +46,12 @@ office() {
 
 slvim() {
   sudo /home/polyface/.local/bin/lvim "$1"
+}
+
+rustrun() {
+  rustc "$1"
+  ./$(basename "$1" | rev | cut -d. -f2- | rev)
+  rm $(basename "$1" | rev | cut -d. -f2- | rev)
 }
 
 export PATH="$PATH:/home/polyface/.modular/bin"
