@@ -36,9 +36,9 @@ alias zed="zeditor"
 alias torb="sh -c '"/home/polyface/Desktop/programs/tor-browser/Browser/start-tor-browser" --detach || ([ !  -x "/home/polyface/Desktop/programs/tor-browser/Browser/start-tor-browser" ] && "$(dirname "$*")"/Browser/start-tor-browser --detach)' dummy %k"
 alias catimg="kitty +kitten icat"
 
-source /home/polyface/.ghcup/env
-[ -f "/home/polyface/.ghcup/env" ] && . "/home/polyface/.ghcup/env" # ghcup-env
-export LD_LIBRARY_PATH=/home/polyface/.local/lib/arch-mojo:$LD_LIBRARY_PATH
+#source /home/polyface/.ghcup/env
+#[ -f "/home/polyface/.ghcup/env" ] && . "/home/polyface/.ghcup/env" # ghcup-env
+#export LD_LIBRARY_PATH=/home/polyface/.local/lib/arch-mojo:$LD_LIBRARY_PATH
 
 office() {
     soffice --writer "$1" &
