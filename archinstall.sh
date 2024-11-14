@@ -25,6 +25,7 @@ if [[ $yn =~ ^[Yy]$ ]]; then
     cp -r  ~/.config/zsh ~/.config/backup
     cp -r ~/.config/mako/ ~/.config/backup
     cp -r ~/.config/rofi/ ~/.config/backup
+    cp -r /.config/kitty ~/.config/backup
     echo "done. Starting to install dependencies.."
 
 elif [[ $yn =~ ^[Nn]$ ]]; then
@@ -42,9 +43,9 @@ paru -S grimblast
 paru -S iwmenu-git
 
 
-mkdir -p ~/Pictures/wallpapers
-cd ~/Pictures/wallpapers
-wget https://polyface.ch/images/wallpaper/anime-girl-alone-cat-night-sky-stars-city-scenery-ai-4k-wallpaper-uhdpaper.com-743@1@l.jpg
+
+#oh my zsh
+sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
 
 mkdir -p ~/.config/oh-my-posh
@@ -54,9 +55,10 @@ cd /tmp
 rm -rf dotfiles
 git clone https://github.com/AQMpolyface/dotfiles.git
 
-rm -rf ~/.config/wofi ~/.config/waybar ~/.config/hypr ~/.config/fastfetch ~/.zshrc ~/.config/rofi
+rm -rf ~/.config/wofi ~/.config/waybar ~/.config/hypr ~/.config/fastfetch ~/.zshrc ~/.config/rofi ~/.config/kitty
 cd dotfiles
-mv waybar/logo.png /usr/share
+echo "need sudo to move logo to /usr/share"
+sudo mv waybar/logo.png /usr/share
 
 cp -r rofi  ~/.config/rofi/
 mkdir -p ~/.local/share/rofi/
@@ -69,7 +71,7 @@ cp -r hypr ~/.config/
 cp .zshrc ~
 cp -r zsh ~/.config/
 cp -r mako ~/.config/
-
+cp -r kitty ~/.config/
 echo "done. you can restart to hyprland and see if it works correctly"
 
 
