@@ -61,9 +61,6 @@ echo "need sudo to move logo to /usr/share"
 sudo mv waybar/logo.png /usr/share
 
 cp -r rofi  ~/.config/rofi/
-mkdir -p ~/.local/share/rofi/
-mkdir -p ~/.local/share/rofi/themes/
-cp -r ~/.config/rofi/themes/* ~/.local/share/rofi/themes/
 cp -r wofi ~/.config/
 cp -r waybar ~/.config/
 cp -r fastfetch ~/.config/
