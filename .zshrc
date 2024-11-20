@@ -33,6 +33,7 @@ alias qi="paru -Qi"
 alias lvim="/home/polyface/.local/bin/lvim"
 alias auto="/home/polyface/Desktop/auto.sh"
 alias zed="zeditor"
+alias bninja="/home/polyface/Desktop/programs/binaryninja/binaryninja"
 alias torb="sh -c '"/home/polyface/Desktop/programs/tor-browser/Browser/start-tor-browser" --detach || ([ !  -x "/home/polyface/Desktop/programs/tor-browser/Browser/start-tor-browser" ] && "$(dirname "$*")"/Browser/start-tor-browser --detach)' dummy %k"
 alias catimg="kitty +kitten icat"
 
@@ -48,10 +49,14 @@ slvim() {
   sudo /home/polyface/.local/bin/lvim "$1"
 }
 
-rustrun() {
+rust() {
   rustc "$1"
   ./$(basename "$1" | rev | cut -d. -f2- | rev)
   rm $(basename "$1" | rev | cut -d. -f2- | rev)
+}
+gobexe() {
+file_name_without_extension="${1%.go}"
+GOOS=windows GOARCH=amd64 go build -o "$file_name_without_extension.exe" "$1"
 }
 
 export PATH="$PATH:/home/polyface/.modular/bin"
